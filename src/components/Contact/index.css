@@ -1,0 +1,275 @@
+.contact-bg {
+    /* padding-bottom: 0; */
+    /* margin-bottom: 0; */
+    padding: 0;
+    margin: 0;
+}
+.contact-content {
+    position: absolute;
+    color: #fff;
+    top: 0;
+    left: 7%;
+    width: 93%;
+    height: 100%;
+    /* overflow-y: auto; */
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+    /* padding-bottom: 500px; */
+}
+.under-g-content {
+    position: sticky;
+    width: 100%;
+    height: 100vh;
+    /* background-color: #fff; */
+    color: #fff;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+.under-g-content .content {
+    text-align: center;
+    /* border-bottom: 1px solid #111010; */
+    padding-bottom: 10px;
+    padding: 0px 15px;
+    overflow: hidden;
+}
+.under-g-content .content h1{
+    text-align: center;
+    text-shadow: 2px 2px 0 #ff0000;
+    font-weight: bolder;
+    margin-bottom: -5px;
+    padding-top: 20px;
+    font-size: 25px;
+    /* transform: translateY(80px); */
+}
+.under-g-content .brand-name {
+    font-family: "Orbitron", sans-serif;
+}
+.under-g-content .page-name {
+    font-family: "Nunito", sans-serif;
+}
+.contact-section-bg {
+    position: relative;
+    z-index: 1;
+    /* background-color: red; */
+    padding: 0px 20px;
+}
+.contact-section-content {
+    /* background-color: red; */
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.884);
+    box-shadow: 4px 4px 0 #333;
+    /* background-color: red; */
+    backdrop-filter: blur(5px);
+    padding: 20px 30px 60px 30px;
+}
+@media (min-width: 992px) {
+    .under-g-content .content h1 {
+        font-size: 60px;
+    }
+}
+@media (max-width: 767px) {
+    .contact-content {
+        left: 0;
+        width: 100%;
+    }
+    .contact-section-bg {
+        padding: 0;
+    }
+    .contact-section-content {
+        padding: 40px 10px;
+    }
+}
+@media (max-width: 991px) {
+    .under-g-content .content h1 {
+        margin-bottom: -2px;
+    }
+}
+
+
+/* MARQUEE for under content */
+.under-content-marquee-container {
+    transform: rotate(-30deg);
+    position: absolute;
+    top: 10%;
+    left: -10%;
+    width: 100%;
+    /* background-color: red; */
+    overflow: hidden;
+    /* right: 0;
+    left: 2%;
+    bottom: 0; */
+    /* background-color: #ff0000; */
+}
+.under-content-marquee-container.bottom1 {
+    top: 70%;
+    right: 0;
+    left: 10%;
+}
+.under-content-marquee-container.bottom2 {
+    top: 70%;
+    right: 0;
+    left: 40%;
+}
+.under-content-marquee-container .under-marquee {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.under-content-marquee-container .under-marquee h1 {
+    font-size: 100px;
+    font-weight: bold;
+    font-family: "Syncopate", sans-serif;
+    margin: 0px 0px 0px 500px;
+    animation: marquee-animation 60000ms linear infinite;
+    width: 100%;
+    white-space: nowrap;
+    color: whitesmoke;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+    text-stroke-color: #fff;
+}
+.under-content-marquee-container.bottom1 .under-marquee h1 {
+    animation: marquee-animation 40000ms linear infinite;
+    color: transparent;
+    text-shadow: 10px 5px 0 whitesmoke;
+}
+.under-content-marquee-container.bottom1 .under-marquee h1 {
+    animation: marquee-animation 50000ms linear infinite;
+}
+@media (max-width: 1300px) {
+    .under-content-marquee-container .under-marquee h1 {
+        font-size: 50px;
+        margin: 0px 0px 0px 100px;
+    }
+}
+@media (max-width: 991px) {
+    .under-content-marquee-container .under-marquee h1 {
+        font-size: 30px;
+        margin: 0px 0px 0px 100px;
+    }
+    .under-content-marquee-container.bottom1 {
+        top: 85%;
+        right: 0;
+        left: 10%;
+    }
+    .under-content-marquee-container.bottom2 {
+        top: 85%;
+        right: 0;
+        left: 40%;
+    }
+}
+@media (max-width: 768px) {
+    .under-content-marquee-container .under-marquee h1 {
+        margin: 0px 0px 0px 200px;
+    }
+}
+
+/* Contact me card */
+.contact-brand {
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 0 #ff0000;
+}
+.contact-map-form-bg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.contact-brand-bg {
+    padding: 20px 10px;
+    height: 100%;
+    width: 45%;
+}
+.contact-brand-bg p {
+    font-size: 12px;
+}
+.contact-map {
+    width: 55%;
+    height: 500px;
+    background-color: #333;
+    border-radius: 10px;
+}
+.contact-form {
+    padding: 15px 10px;
+    padding-left: 0px;
+    margin-top: 20px;
+}
+.contact-form ul li {
+    margin-bottom: 20px;
+}
+.contact-form ul li input {
+    height: 50px;
+    width: 80%;
+    font-size: 14px;
+    border: 1px solid #333;
+    background-color: #333;
+    color: whitesmoke;
+    border-radius: 5px;
+    /* -webkit-tap-highlight-color: #333; */
+    padding-left: 5px;
+}
+.contact-form ul li textarea {
+    height: 100px;
+    width: 95%;
+    font-size: 14px;
+    color: whitesmoke;
+    background-color: #333;
+    border-radius: 5px;
+    border: 1px solid #333;
+    padding-left: 5px;
+}
+.contact-form ul li input:focus {
+    outline: 1px solid #333;
+    border: 1px solid #333;
+    background-color: #333;
+}
+.contact-form ul li textarea:focus {
+    outline: 1px solid #333;
+    border: 1px solid #333;
+    background-color: #333;
+}
+.contact-form ul li .contact-form-btn {
+    color: whitesmoke;
+    background-color: #ff0000;
+    border: 1px solid #ff0000;
+    box-shadow: 4px 4px 0 #333;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 40%;
+}
+.contact-form ul li .contact-form-btn:active,
+.contact-form ul li .contact-form-btn:hover {
+    box-shadow: inset 4px 4px 0 #333;
+}
+@media (max-width:991px) {
+    .contact-map-form-bg {
+        display: block;
+    }
+    .contact-brand-bg {
+        width: 100%;
+    }
+    .contact-map {
+        width: 100%;
+    }
+}
+
+/* React leaflet map */
+.leaflet-container {
+    height: 100%;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    opacity: 0;
+    animation: backInRight 1s 1.2s;
+    animation-fill-mode: forwards;
+}

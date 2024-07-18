@@ -1,0 +1,29 @@
+:root {
+  font-family: 300 11px/1.4 "Montserrat", sans-serif;
+  display: block;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #fff;
+  background-color: black;
+
+  /* font-family: "Orbitron", sans-serif; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "Orbitron", sans-serif; */
+  background-color: black;
+  overflow-x: hidden;
+}
