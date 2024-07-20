@@ -13,10 +13,10 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='fortuneCodeHub-react-1/' element={<Home />} />
-        <Route path='fortuneCodeHub-react-1/projects' element={<Project />} />
-        <Route path='fortuneCodeHub-react-1/contact' element={<Contacts />} />
-        <Route path="fortuneCodeHub-react-1/about" element={<About />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/projects' element={<Project />} />
+        <Route path='/contact' element={<Contacts />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </>
   )
