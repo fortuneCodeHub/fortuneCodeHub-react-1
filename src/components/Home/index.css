@@ -299,13 +299,13 @@ body {
     animation: marquee-animation 60000ms linear infinite;
     width: 100%;
     white-space: nowrap;
-    text-shadow: 10px 5px 0 whitesmoke;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #fff;
     text-stroke-color: #fff;
 }
 .under-content-marquee-container .under-marquee #marq {
     color: transparent;
+    text-shadow: 10px 5px 0 whitesmoke;
 }
 /* .under-content-marquee-container.bottom1 .under-marquee h1 {
     animation: marquee-animation 40000ms linear infinite;
