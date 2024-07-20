@@ -55,23 +55,23 @@ const Home = () => {
 
     return (
         <>
-            <div className='d-flex'>
+            <div className='d-flex full-container'>
                 <Layout />
                 <div className='main-content'>
                     <Navbar />
                     {/* <div className="under-g-content"> */}
                         <div className="under-content-marquee-container">
                             <div className="under-marquee">
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
+                                <h1 className="text-uppercase" id="marq">Full-Stack Developer</h1>
+                                <h1 className="text-uppercase" id="marq">Full-Stack Developer</h1>
+                                <h1 className="text-uppercase" id="marq">Full-Stack Developer</h1>
+                                <h1 className="text-uppercase" id="marq">Full-Stack Developer</h1>
+                                <h1 className="text-uppercase" id="marq">Full-Stack Developer</h1>
+                                <h1 className="text-uppercase" id="marq">Full-Stack Developer</h1>
+                                <h1 className="text-uppercase" id="marq">Full-Stack Developer</h1>
                             </div>
                         </div>
-                        <div className="under-content-marquee-container bottom1">
+                        {/* <div className="under-content-marquee-container second">
                             <div className="under-marquee">
                                 <h1 className="text-uppercase">Front-End Developer</h1>
                                 <h1 className="text-uppercase">Front-End Developer</h1>
@@ -82,7 +82,7 @@ const Home = () => {
                                 <h1 className="text-uppercase">Front-End Developer</h1>
                             </div>
                         </div>
-                        <div className="under-content-marquee-container bottom2">
+                        <div className="under-content-marquee-container third">
                             <div className="under-marquee">
                                 <h1 className="text-uppercase">Back-End Developer</h1>
                                 <h1 className="text-uppercase">Back-End Developer</h1>
@@ -92,7 +92,7 @@ const Home = () => {
                                 <h1 className="text-uppercase">Back-End Developer</h1>
                                 <h1 className="text-uppercase">Back-End Developer</h1>
                             </div>
-                        </div>
+                        </div> */}
                     {/* </div> */}
                     <div className="text-content">
                         <h1>
