@@ -7,7 +7,7 @@ import gsap from "gsap"
 import SplitTextJS from "split-text-js"
 import AnimatedLetters from "../AnimatedLetters"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faInfo } from "@fortawesome/free-solid-svg-icons"
+import { faArrowDown, faArrowUp, faInfo } from "@fortawesome/free-solid-svg-icons"
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet"
 import "leaflet/dist/leaflet.css";
 import emailjs from "@emailjs/browser"
@@ -32,14 +32,16 @@ const Contacts = () => {
     const footerRef = useRef()
     const [footerIsVisible, setFooterIsVisible] = useState()
 
+    const [scrollHeight, setScrollHeight] = useState(0)
+
     for (let i = 0; i < animateDoms.length; i++) {
         const splitTitle = new SplitTextJS(animateDoms[i])
 
         tl.from(splitTitle.chars, {
             y: 100,
             opacity: 0,
-            stagger: 0.05,
-            duration: 1,
+            stagger: 0.02,
+            duration: .5,
         })
     }
 
@@ -89,10 +91,11 @@ const Contacts = () => {
             .catch((error) => {
                 console.log("Error sending email: ", error);
             })
-
-
+            
+            
     }
-
+        console.log(scrollHeight);
+        
     useEffect(() => {
         setAnimateDoms(gsap.utils.toArray(".threeD-animate"))
 
@@ -135,44 +138,16 @@ const Contacts = () => {
                 <div className="contact-content">
                     <Navbar />
                     <div className="under-g-content">
-                        <div className="under-content-marquee-container">
-                            <div className="under-marquee">
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                            </div>
-                        </div>
-                        <div className="under-content-marquee-container bottom1">
-                            <div className="under-marquee">
-                                <h1 className="text-uppercase">Front-End Developer</h1>
-                                <h1 className="text-uppercase">Front-End Developer</h1>
-                                <h1 className="text-uppercase">Front-End Developer</h1>
-                                <h1 className="text-uppercase">Front-End Developer</h1>
-                                <h1 className="text-uppercase">Front-End Developer</h1>
-                                <h1 className="text-uppercase">Front-End Developer</h1>
-                                <h1 className="text-uppercase">Front-End Developer</h1>
-                            </div>
-                        </div>
-                        <div className="under-content-marquee-container bottom2">
-                            <div className="under-marquee">
-                                <h1 className="text-uppercase">Back-End Developer</h1>
-                                <h1 className="text-uppercase">Back-End Developer</h1>
-                                <h1 className="text-uppercase">Back-End Developer</h1>
-                                <h1 className="text-uppercase">Back-End Developer</h1>
-                                <h1 className="text-uppercase">Back-End Developer</h1>
-                                <h1 className="text-uppercase">Back-End Developer</h1>
-                                <h1 className="text-uppercase">Back-End Developer</h1>
-                            </div>
+                        <div className="content">
+                            <h1 className="brand-name threeD-animate" id="h1">&lt;?=FCodeHub?&gt;</h1>
                         </div>
                         <div className="content">
-                            <h1 className="brand-name threeD-animate">&lt;?=FCodeHub?&gt;</h1>
+                            <h1 className="page-name threeD-animate" id="h1">CONTACT ME</h1>
                         </div>
-                        <div className="content">
-                            <h1 className="page-name threeD-animate">CONTACT ME</h1>
+                        <div class="scroll-arrow" id="scrollArrow">
+                            <span class="arrow-down">
+                                <FontAwesomeIcon icon={faArrowDown} />
+                            </span>
                         </div>
                     </div>
                     <div className="contact-section-bg">

@@ -21,7 +21,7 @@ const Navbar = () => {
         navbarNav.classList.add("animateit")
         setTimeout( () => {
             navbarList.classList.remove("display-bar")
-        } , 2000)
+        } , 1000)
     }
     return (
         <>

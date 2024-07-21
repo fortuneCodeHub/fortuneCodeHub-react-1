@@ -36,9 +36,9 @@
     padding: 0px 15px;
     overflow: hidden;
 }
-.under-g-content .content h1{
+.under-g-content .content #h1{
     text-align: center;
-    text-shadow: 2px 2px 0 #ff0000;
+    text-shadow: 2px 2px 0 #a5761d;
     font-weight: bolder;
     margin-bottom: -5px;
     padding-top: 20px;
@@ -69,7 +69,7 @@
     padding: 20px 30px 60px 30px;
 }
 @media (min-width: 992px) {
-    .under-g-content .content h1 {
+    .under-g-content .content #h1 {
         font-size: 60px;
     }
 }
@@ -86,7 +86,7 @@
     }
 }
 @media (max-width: 991px) {
-    .under-g-content .content h1 {
+    .under-g-content .content #h1 {
         margin-bottom: -2px;
     }
 }
@@ -175,7 +175,7 @@
 .contact-brand {
     font-size: 30px;
     font-weight: bold;
-    text-shadow: 2px 2px 0 #ff0000;
+    text-shadow: 2px 2px 0 #a5761d;
 }
 .contact-map-form-bg {
     display: flex;
@@ -238,9 +238,8 @@
 }
 .contact-form ul li .contact-form-btn {
     color: whitesmoke;
-    background-color: #ff0000;
-    border: 1px solid #ff0000;
-    box-shadow: 4px 4px 0 #333;
+    background-color: #a5761d;
+    border: 1px solid #a5761d;
     font-size: 15px;
     font-weight: bold;
     border-radius: 10px;
@@ -273,3 +272,43 @@
     animation: backInRight 1s 1.2s;
     animation-fill-mode: forwards;
 }
+
+.scroll-arrow {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out, transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    animation: bounce 1s infinite alternate;
+    z-index: 3;
+    color: #fff;
+  }
+  
+  /* .scroll-arrow.show {
+    opacity: 1;
+  }
+   */
+  .arrow-down {
+    display: block;
+    font-size: 25px;
+    transform-origin: center bottom;
+    color: #fff;
+  }
+  .arrow-down:hover {
+    cursor: pointer;
+  }
+  
+  .arrow-up {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }

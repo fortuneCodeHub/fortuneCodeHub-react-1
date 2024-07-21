@@ -13,7 +13,7 @@ import PostMan from "../../assets/images/postman.svg"
 import Xampp from "../../assets/images/xampp.svg"
 import Footer from "../Footer"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faRobot } from "@fortawesome/free-solid-svg-icons"
+import { faArrowDown, faRobot } from "@fortawesome/free-solid-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub"
 import { faDribbble, faFigma, faPhp, faPinterest, faYoutube } from "@fortawesome/free-brands-svg-icons"
 gsap.registerPlugin(ScrollTrigger)
@@ -35,8 +35,8 @@ const About = () => {
         tl.from(splitTitle.chars, {
             y: 100,
             opacity: 0,
-            stagger: 0.05,
-            duration: 1,
+            stagger: 0.02,
+            duration: .5,
         })
     }
 
@@ -86,20 +86,20 @@ const About = () => {
         setAnimateDoms(gsap.utils.toArray(".threeD-animate"))
 
         // Image animation from one section to another 
-        gsap.to(".image-galls", {
-            x: -530,
-            y: 500,
-            duration: 1,
-            scrollTrigger: {
-                trigger: ".image-galls",
-                start: "top 50%",
-                end: "top 20%",
-                scrub: 4,
-                toggleActions: "play continue reverse none",
-                // pin: ".image-galls-two",
-                // markers: true,
-            }
-        })
+        // gsap.to(".image-galls", {
+        //     x: -530,
+        //     y: 500,
+        //     duration: 1,
+        //     scrollTrigger: {
+        //         trigger: ".image-galls",
+        //         start: "top 50%",
+        //         end: "top 20%",
+        //         scrub: 4,
+        //         toggleActions: "play continue reverse none",
+        //         // pin: ".image-galls-two",
+        //         // markers: true,
+        //     }
+        // })
 
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
@@ -119,7 +119,7 @@ const About = () => {
 
                     if (entry.target.classList[0] == "rt-card") {
                         // entry.target.style.opacity = 0
-                        setNum(num += 0.5)
+                        setNum(num += 0.1)
                         
                         entry.target.style.animation = `fadeCardUp 1s ${num}s backwards`
                     }
@@ -153,49 +153,21 @@ const About = () => {
                 <div className="about-content">
                     <Navbar />
                     <div className="under-g-content">
-                        <div className="under-content-marquee-container">
-                            <div className="under-marquee">
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                            </div>
-                        </div>
-                        <div className="under-content-marquee-container bottom1">
-                            <div className="under-marquee">
-                                <h1 className="text-uppercase">Front-End Developer</h1>
-                                <h1 className="text-uppercase">Front-End Developer</h1>
-                                <h1 className="text-uppercase">Front-End Developer</h1>
-                                <h1 className="text-uppercase">Front-End Developer</h1>
-                                <h1 className="text-uppercase">Front-End Developer</h1>
-                                <h1 className="text-uppercase">Front-End Developer</h1>
-                                <h1 className="text-uppercase">Front-End Developer</h1>
-                            </div>
-                        </div>
-                        <div className="under-content-marquee-container bottom2">
-                            <div className="under-marquee">
-                                <h1 className="text-uppercase">Back-End Developer</h1>
-                                <h1 className="text-uppercase">Back-End Developer</h1>
-                                <h1 className="text-uppercase">Back-End Developer</h1>
-                                <h1 className="text-uppercase">Back-End Developer</h1>
-                                <h1 className="text-uppercase">Back-End Developer</h1>
-                                <h1 className="text-uppercase">Back-End Developer</h1>
-                                <h1 className="text-uppercase">Back-End Developer</h1>
-                            </div>
+                        <div className="content">
+                            <h1 className="page-name threeD-animate" id="h1">ABOUT</h1>
                         </div>
                         <div className="content">
-                            <h1 className="page-name threeD-animate">ABOUT</h1>
+                            <h1 className="brand-name threeD-animate" id="h1">&lt;?=FCodeHub?&gt;</h1>
                         </div>
-                        <div className="content">
-                            <h1 className="brand-name threeD-animate">&lt;?=FCodeHub?&gt;</h1>
+                        <div class="scroll-arrow" id="scrollArrow">
+                            <span class="arrow-down">
+                                <FontAwesomeIcon icon={faArrowDown} />
+                            </span>
                         </div>
                     </div>
                     <div className="about-section-bg">
                         <div className="about-section-content">
-                            <div className="d-flex align-items-center justify-content-between about-main-content">
+                            <div className="d-flex align-items-center justify-content-center about-main-content">
                                 <div className="about-text" ref={aboutText}>
                                     <div>
                                         <h1>ABOUT ME</h1>
@@ -204,16 +176,8 @@ const About = () => {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="image-galls">
-                                    <img src={Image2} alt="" className="glass one" />
-                                    <img src={Image1} alt="" className="glass two" />
-                                </div>
                             </div>
-                            <div className="d-flex align-items-center justify-content-between about-main-content">
-                                <div className="image-galls-two">
-                                    {/* <img src={Image2} alt="" className="glass one" />
-                                    <img src={Image1} alt="" className="glass two" /> */}
-                                </div>
+                            <div className="d-flex align-items-center justify-content-center about-main-content">
                                 <div className="about-text-two" ref={aboutTextTwo}>
                                     <h1>SKILLS</h1>
                                     <p className="rt-card react">

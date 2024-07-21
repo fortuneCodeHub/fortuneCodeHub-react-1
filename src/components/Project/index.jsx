@@ -11,6 +11,8 @@ import FullStackGlass from "./fullstack"
 import FrontEndGlass from "./frontend"
 import SidePanel from "../SidePanel/index.jsx"
 import Footer from '../Footer/index.jsx'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons"
 
 // console.log(data.fullStack);
 
@@ -52,8 +54,8 @@ const Project = () => {
         tl.from(splitTitle.chars, {
             y: 100,
             opacity: 0,
-            stagger: 0.05,
-            duration: 1,
+            stagger: 0.02,
+            duration: .5,
         })
     }
 
@@ -70,8 +72,8 @@ const Project = () => {
             secondTl.from(splitFullStack.chars, {
                 y: 100,  
                 opacity: 0,
-                stagger: 0.05,
-                duration: 1,
+                stagger: 0.02,
+                duration: .5,
             })
         }
     }
@@ -89,8 +91,8 @@ const Project = () => {
             secondTl.from(splitFrontEnd.chars, { 
                 y: 100,  
                 opacity: 0,
-                stagger: 0.05,
-                duration: 1,
+                stagger: 0.02,
+                duration: .5,
             })
         }
     }
@@ -195,47 +197,19 @@ const Project = () => {
                 <div className="project-content">
                     <Navbar />
                     <div className="under-g-content">
-                        <div className="under-content-marquee-container">
-                            <div className="under-marquee">
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                                <h1 className="text-uppercase">Full-Stack Developer</h1>
-                            </div>
-                        </div>
-                        <div className="under-content-marquee-container bottom1">
-                            <div className="under-marquee">
-                                <h1 className="text-uppercase">Front-End Developer</h1>
-                                <h1 className="text-uppercase">Front-End Developer</h1>
-                                <h1 className="text-uppercase">Front-End Developer</h1>
-                                <h1 className="text-uppercase">Front-End Developer</h1>
-                                <h1 className="text-uppercase">Front-End Developer</h1>
-                                <h1 className="text-uppercase">Front-End Developer</h1>
-                                <h1 className="text-uppercase">Front-End Developer</h1>
-                            </div>
-                        </div>
-                        <div className="under-content-marquee-container bottom2">
-                            <div className="under-marquee">
-                                <h1 className="text-uppercase">Back-End Developer</h1>
-                                <h1 className="text-uppercase">Back-End Developer</h1>
-                                <h1 className="text-uppercase">Back-End Developer</h1>
-                                <h1 className="text-uppercase">Back-End Developer</h1>
-                                <h1 className="text-uppercase">Back-End Developer</h1>
-                                <h1 className="text-uppercase">Back-End Developer</h1>
-                                <h1 className="text-uppercase">Back-End Developer</h1>
-                            </div>
-                        </div>
                         <div className="content">
                             <h1 className="brand-name threeD-animate">&lt;?=FCodeHub?&gt;</h1>
                         </div>
                         <div className="content">
                             <h1 className="page-name threeD-animate">PROJECTS</h1>
                         </div>
+                        <div class="scroll-arrow" id="scrollArrow">
+                            <a href="#project" class="arrow-down">
+                                <FontAwesomeIcon icon={faArrowDown} />
+                            </a>
+                        </div>
                     </div>
-                    <div className="project-section-bg">
+                    <div className="project-section-bg" id="project">
                         <div className="project-section-content">
                             <div className="full-stack-area" ref={fullStackRef}>
                                 <div className="full-stack-title" ref={fullStackTitle}>

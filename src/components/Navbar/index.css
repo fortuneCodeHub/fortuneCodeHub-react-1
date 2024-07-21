@@ -1,6 +1,6 @@
 .navbar {
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     width: 100%;
     color: #fff;
     background-color: #00000079;
@@ -11,7 +11,7 @@
     color: #fff;
     font-size: 15px;
     font-family: "Orbitron", sans-serif;
-    text-shadow: 2px 2px 0 #ff0000;
+    text-shadow: 2px 2px 0 #a5761d;
 }
 .cancel-navbar {
     position: absolute;
@@ -55,47 +55,47 @@
     text-decoration: none;
     font-weight: 600;
     color: #fff;
-    text-shadow: 2px 2px 0 #ff0000;
+    text-shadow: 2px 2px 0 #a5761d;
 }
 .navbar-list-bg.display-bar .navbar-list .home {
     opacity: 0;
-    animation: go-up 1.2s 1.2s ease-in-out;
+    animation: go-up .1s .1s ease-in-out;
     animation-fill-mode: both;
 }
 .navbar-list-bg.display-bar .navbar-list .contact {
     opacity: 0;
-    animation: go-up 1.4s 1.4s ease-in-out;
+    animation: go-up .2s .2s ease-in-out;
     animation-fill-mode: both;
 }
 .navbar-list-bg.display-bar .navbar-list .about {
     opacity: 0;
-    animation: go-up 1.6s 1.6s ease-in-out;
+    animation: go-up .3s .3s ease-in-out;
     animation-fill-mode: both;
 }
 .navbar-list-bg.display-bar .navbar-list .project {
     opacity: 0;
-    animation: go-up 1.8s 1.8s ease-in-out;
+    animation: go-up .4s .4s ease-in-out;
     animation-fill-mode: both;
 }
 
 .navbar-list-bg .navbar-list-nav.animateit .navbar-list .home {
     opacity: 0;
-    animation: go-down .5s .5s ease-in-out;
+    animation: go-down .1s .1s ease-in-out;
     animation-fill-mode: both;
 }
 .navbar-list-bg .navbar-list-nav.animateit .navbar-list .contact {
     opacity: 0;
-    animation: go-down .7s .7s ease-in-out;
+    animation: go-down .2s .2s ease-in-out;
     animation-fill-mode: both;
 }
 .navbar-list-bg .navbar-list-nav.animateit .navbar-list .about {
     opacity: 0;
-    animation: go-down .9s .9s ease-in-out;
+    animation: go-down .3s .3s ease-in-out;
     animation-fill-mode: both;
 }
 .navbar-list-bg .navbar-list-nav.animateit .navbar-list .project {
     opacity: 0;
-    animation: go-down 1.1s 1.1s ease-in-out;
+    animation: go-down .4s .4s ease-in-out;
     animation-fill-mode: both;
 }
 

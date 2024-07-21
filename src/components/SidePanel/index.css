@@ -80,14 +80,14 @@
 .side-content-header h1 {
     font-weight: 700;
     letter-spacing: 1px;
-    text-shadow: 2px 2px 0 #ff0000;
+    text-shadow: 2px 2px 0 #a5761d;
     font-family: "Orbitron", sans-serif;
 }
 .side-content-header h1 .hyphen {
     visibility: hidden;
     transition: all 1s ease-in-out;
     padding-right: 2px;
-    text-shadow: 2px 2px 0 #ff0000;
+    text-shadow: 2px 2px 0 #a5761d;
     display: none;
 }
 .side-content-header:hover h1 {
@@ -119,14 +119,14 @@
 .side-content-stack .stacks {
     padding: 7px 10px;
     font-weight: bold;
-    background-color: #ff0000;
-    border: 1px solid #ff0000;
+    background-color: #a5761d;
+    border: 1px solid #a5761d;
     border-radius: 10px;
     text-transform: uppercase;
     margin-left: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
-    box-shadow: 2px 2px 0 #333;
+    /* box-shadow: 2px 2px 0 #333; */
 }
 .side-content-cta {
     width: 80%;
@@ -137,7 +137,7 @@
     width: 100%;
 }
 .side-content-cta div a {
-    background-color: #ff0000;
+    background-color: #a5761d;
     width: 100%;
     text-align: center;
     color: #fff;
@@ -147,12 +147,12 @@
     text-decoration: none;
     padding: 12px 0px;
     border-radius: 15px;
-    box-shadow: 4px 4px 0 #333;
+    /* box-shadow: 4px 4px 0 #333; */
 }
-.side-content-cta div a:hover,
+/* .side-content-cta div a:hover,
 .side-content-cta div a:active {
     box-shadow: inset 4px 4px 0 #333;
-}
+} */
 @media (max-width: 991px) {
     .side-panel-content {
         width: 100%;
