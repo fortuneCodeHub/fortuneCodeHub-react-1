@@ -28,7 +28,7 @@ const Navbar = () => {
             <div>
                 <nav class="navbar navbar-expand-md d-md-none d-block">
                     <div class="container d-flex align-items-center justify-content-between">
-                        <a class="navbar-brand" href="#">&lt;?=FCodeHub?&gt;</a>
+                        <a class="navbar-brand" href="/">&lt;?=FCodeHub?&gt;</a>
                         <button onClick={handleOpenNavbar} className="open-navbar nav-btn" >
                             <FontAwesomeIcon icon={faBars} color="white" />
                         </button>
