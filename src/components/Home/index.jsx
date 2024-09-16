@@ -94,7 +94,7 @@ const Home = () => {
                             </h3>
                             <div className="d-flex flatBtn-bg">
                                 <Link to="/contact" className='flatBtn one'>Contact Me</Link>
-                                <a href='FORTUNE_NWOHIRI_RESUME.pdf' className='flatBtn two' target="_blank" rel="noopener noreferrer">Download CV</a>
+                                <a href='FORTUNE_NWOHIRI.pdf' className='flatBtn two' target="_blank" rel="noopener noreferrer">Download CV</a>
                             </div>
                         </div>
                         {/* <img src={Image6} className='big-img d-lg-none d-flex' alt="" /> */}
